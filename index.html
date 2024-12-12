@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twibbon PHI Ke - 96 tingkat Kecamatan Sematu Jaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Twibbon Hari Ibu ke - 96 Tingkat Kecamatan Sematu Jaya di Desa Bina Bhakti</h1>
+
+        <!-- 1. Upload Photo -->
+        <div class="section">
+            <label for="uploadPhoto">1. Upload Foto:</label>
+            <input type="file" id="uploadPhoto" accept="image/*">
+        </div>
+
+
+        <!-- 2. Design Twibbon -->
+        <div class="canvas-container">
+            <h2>2. Desain Twibbon:</h2>
+            <canvas id="twibbonCanvas" width="600" height="900"></canvas>
+        </div>
+
+
+        <!-- 3. Controls for adjusting image size and position -->
+        <div class="controls">
+            <label>3. Atur Ukuran dan Posisi Foto:</label>
+            <button onclick="resizeImage('increase')">&#x2795;</button> <!-- Perbesar -->
+            <button onclick="resizeImage('decrease')">&#x2796;</button> <!-- Perkecil -->
+            <button onclick="moveImage('up')">&#8593;</button> <!-- Atas -->
+            <button onclick="moveImage('down')">&#8595;</button> <!-- Bawah -->
+            <button onclick="moveImage('left')">&#8592;</button> <!-- Kiri -->
+            <button onclick="moveImage('right')">&#8594;</button> <!-- Kanan -->
+        </div>
+
+        <!-- Download Button -->
+        <button onclick="downloadImage()">Download Twibbon</button>
+
+        <!-- Panduan Penggunaan -->
+        <div class="guide">
+            <h2>Panduan Penggunaan:</h2>
+            <ol>
+                <li>
+                    <strong>Upload Foto:</strong> Klik tombol <strong>"Upload Foto"</strong> untuk memilih foto dari perangkat Anda. Pastikan foto memiliki format yang didukung (misalnya, JPG, PNG).
+                </li>
+                <li>
+                    <strong>Desain Twibbon:</strong> Setelah foto diunggah, foto akan muncul di dalam canvas Twibbon. Anda dapat melihat desain awal yang akan digunakan.
+                </li>
+                <li>
+                    <strong>Atur Ukuran dan Posisi Foto:</strong>
+                    <ul>
+                        <li><strong>➕ (Perbesar):</strong> Memperbesar ukuran foto.</li>
+                        <li><strong>➖ (Perkecil):</strong> Memperkecil ukuran foto.</li>
+                        <li><strong>⬆️ (Atas):</strong> Memindahkan foto ke atas.</li>
+                        <li><strong>⬇️ (Bawah):</strong> Memindahkan foto ke bawah.</li>
+                        <li><strong>⬅️ (Kiri):</strong> Memindahkan foto ke kiri.</li>
+                        <li><strong>➡️ (Kanan):</strong> Memindahkan foto ke kanan.</li>
+                    </ul>
+                    Lakukan penyesuaian hingga foto terlihat sesuai di dalam desain Twibbon.
+                </li>
+                <li>
+                    <strong>Unduh Twibbon:</strong> Klik tombol <strong>"Download Twibbon"</strong> untuk mengunduh hasilnya ke perangkat Anda. Twibbon akan disimpan sebagai gambar.
+                </li>
+                <li>
+                    <strong>Bagikan Twibbon:</strong> Setelah mengunduh, gunakan Twibbon tersebut untuk keperluan acara. Anda bisa membagikannya di media sosial atau menyimpannya sebagai kenang-kenangan.
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
